@@ -1,0 +1,143 @@
+/* html,bodyタグの設定 */
+html, body{
+    margin: 0;         /* 余白の削除 */
+    padding: 0;        /* 余白の削除 */
+    width:100%;
+    height:100%;
+}
+
+/* ヘッダーの固定 */
+.header-fixed
+{
+    position: fixed;            /* フッターの固定 */
+    top: 0px;                /* 位置(下0px) */
+    left: 0px;                  /* 位置(左0px) */
+    width: 100%;                /* 横幅100%　*/
+    height:30px;              /* 縦幅140px */
+}
+.header-bk
+{
+    background-color:#444;     /* 背景色(黒) */
+    height:30px;              /* 縦の高さ140px */
+    opacity: 0.9;
+    padding:10px 0 20px;       /* 上10px、下20pxをあける */
+    width:100%;                /* 横の幅を100% */
+}
+
+/* 背景の固定 */
+.main-content {
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 背景の固定 */
+.main-content-inner {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* メインテキストのリンク */
+a:hover {
+    text-decoration: none;
+}
+
+.inner-layout {
+    margin-top: 65px;
+}
+
+/* PCの時は画面上部に背景画像非表示 */
+@media (min-width: 769px) {
+    .novel-image-sp { 
+        display: none;
+    }
+}
+
+/* スマホの時は画面上部に背景画像表示 */
+@media (max-width: 768px) {
+    .novel-image-sp {
+        margin-bottom: 20px;
+    }
+
+    .novel-image-sp-src {
+        width: 100%;
+    }    
+}    
+
+/* メインテキスト */
+.main-text {
+    margin-bottom: 60px;
+}
+
+/* スクロールバー */
+@media (min-width: 769px) {
+    .main-text-scroll { 
+        overflow-y: scroll;
+        height: 750px;
+    }
+    .main-text-scroll-sp { 
+        display: none;
+    }
+    .main-text-scroll-noimage-sp { 
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .main-text-scroll { 
+        display: none;
+    }        
+    .main-text-scroll-sp { 
+        overflow-y: scroll;
+        height: 280px;
+    }
+    .main-text-scroll-noimage-sp { 
+        overflow-y: scroll;
+        height: 650px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(192,192,192,0.2);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(150,150,150,0.6);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* 次のページ */
+.next-page {
+    font-size: 1.3em;
+}
+
+/* 前のページ */
+.prev-page {
+    font-size: 1.3em;
+}
+
+/* 次の章へ */
+.next-chap {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+
+/* フッターの固定 */
+.footer-fixed {
+    position: fixed;            /* フッターの固定 */
+    bottom: 0px;                /* 位置(下0px) */
+    left: 0px;                  /* 位置(左0px) */
+    width: 100%;                /* 横幅100%　*/
+    height: 50px;              /* 縦幅140px */
+}
+.footer-bk {
+    background-color: #444;     /* 背景色(黒) */
+    height: 50px;              /* 縦の高さ140px */
+    opacity: 0.9;
+    padding: 12px 0 20px;       /* 上10px、下20pxをあける */
+    width: 100%;                /* 横の幅を100% */
+}
