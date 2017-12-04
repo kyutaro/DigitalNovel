@@ -18,7 +18,7 @@
                         </div>
                         <div class="collapse navbar-collapse" id="navbarEexample8">
                             <p class="mr30-pc navbar-text navbar-right">
-                                <a class="navbar-link" href="#" onclick="window.close()">閉じる</a>
+                                <!--<a class="navbar-link" href="#" onclick="window.close()">閉じる</a>-->
                             </p>
                         </div>
                     </div>
